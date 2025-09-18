@@ -1,0 +1,96 @@
+.quiz {
+  max-width: 920px;
+  margin: 22px auto;
+  padding: 18px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(10,20,40,0.06);
+}
+
+.quiz h2 {
+  margin: 0 0 12px;
+  color: var(--primary);
+}
+
+.quiz h3 {
+  color: var(--muted);
+  margin: 14px 0 8px;
+}
+
+/* Interests area */
+.interests {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.interests label {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(37,117,252,0.06), rgba(106,17,203,0.04));
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(37,117,252,0.09);
+}
+
+/* Questions */
+.question {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,0.04);
+  background: linear-gradient(180deg, rgba(250,250,255,1), rgba(249,250,255,1));
+}
+
+.question p {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* radio labels */
+.question label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* submit button */
+.quiz .submit-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+
+.quiz .submit-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* result area */
+.quiz-result {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+  border: 1px solid rgba(15,23,42,0.03);
+}
+
+@media (max-width: 720px) {
+  .quiz { padding: 12px; }
+  .interests label { padding: 8px; font-size: 0.9rem; }
+}
